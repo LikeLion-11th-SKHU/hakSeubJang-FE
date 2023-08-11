@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../static/css/reset.css"> 
     <link rel="stylesheet" href="../static/css/common.css"> 
 
+    <link rel="stylesheet" href="../static/css/index.css"> 
+
     <title>평생학습의 장터, 학습장</title>
 </head>
 <body>
@@ -30,7 +32,70 @@
 
     <!-- 여기서부터 코드 짜면됨. 단, content class이름 자체는 절대 건들지 말 것. -->
     <div class="content">
-        
+        <section class="section_cba">
+            <div class="cba_top">
+                <img class="cba_img" src="../static/img/background1.jpg" alt="학습장배경">
+                <div class="cba_content">
+                    <div class="headline_contain">
+                        <h2>평생학습의 장터,</h2>
+                        <h1>학습장</h1>
+                    </div>
+                </div>
+                <button type="button" class="scroll_down" id="scroll_down"></button>
+            </div>
+
+            <div class="cba_bottom">
+               <p>
+                평생학습을 한 곳에, <br>
+                지역주민, 초등학생, 청년, 구직자 누구나 참여가능한 학습, <br>
+                학습장에서 놓치는 거 없이 다 누려보세요.
+               </p> 
+            </div>
+        </section> <!-- section_cba -->
+
+
+        <section class="section_subintro">
+            <div class="container_subintro">
+                <div class="wrap_subintro">
+                    <div class="headline_sub js-scroll slide-left" >
+                        <h1 class="ft36gr">전체리스트 보기</h1>
+                        <p>전국 모든 평생학습을 <br> 한 페이지에 모았어요.</p>
+                    </div>
+                    <div class="img_sub js-scroll fade-in-bottom">
+                        <img class="logo" src="../static/img/apple-ex.png" alt="리스트">
+                    </div>
+                </div>
+                <div class="wrap_subintro">
+                    <div class="img_sub js-scroll fade-in-bottom">
+                        <img class="logo" src="../static/img/apple-ex.png" alt="리스트">
+                    </div>
+                    <div class="headline_sub js-scroll slide-right">
+                        <h1 class="ft36gr">찜하기</h1>
+                        <p>내가 관심있어 하는 <br> 강좌만 한눈에 볼 수 있어요.</p>
+                    </div>
+                </div>
+                <div class="wrap_subintro">
+                    <div class="headline_sub js-scroll slide-left">
+                        <h1 class="ft36gr">강좌 후기</h1>
+                        <p>해당 강좌를 들은 수강생들의 <br> 간단하고 생생한 후기까지.</p>
+                    </div>
+                    <div class="img_sub js-scroll fade-in-bottom">
+                        <img class="logo" src="../static/img/apple-ex.png" alt="리스트">
+                    </div>
+                </div>
+
+            </div>
+        </section> <!-- section_subintro-->
+
+        <section class="section_end">
+            <div class="section_end_inner">
+                <h1>평생학습의 장터, 학습장</h1>
+                <h2>지금 어떤 강좌가 개설되어 있는지 궁금하다면?</h2>
+                <button class="cba_btn">
+                    <span>전체 강좌 보기</span>
+                </button>
+            </div>
+        </section>
     </div>
 
     <!-- footer -->
@@ -56,6 +121,24 @@
         </footer>
     </div>
 </div>
-    
+    <script src="../static/js/scroll.js"></script>
+    <script>
+        var btnScrollDown = document.querySelector('#scroll_down');
+  
+        function scrollDown() {
+          var windowCoords = document.documentElement.clientHeight;
+          (function scroll() {
+            if (window.pageYOffset < windowCoords) {
+              window.scrollBy(0, 10);
+              setTimeout(scroll, 0);
+            }
+            if (window.pageYOffset > windowCoords) {
+              window.scrollTo(0, windowCoords);
+            }
+          })();
+        }
+      
+        btnScrollDown.addEventListener('click', scrollDown);
+    </script> <!-- scroll button down 기능-->
 </body>
 </html>
