@@ -35,26 +35,28 @@
         <section class="edit">
             <div class="edit__start">
                 <div class="lecture__name">
-                    <input type="text" id="lecture">
+                    <label for="lecture" class="lectureA">강의명 -</label>
+                    <input type="text" id="lecture" class="lectureA">
                 </div>
                 <div class="lecture__id">
-                    <input type="text" id="lecture__id">
+                    <label for="lectureId" class="lectureIDA">강의 id -</label>
+                    <input type="text" id="lectureId" class="lectureIDA">
                 </div>
-                <div id="title-form">
+                <div class="title-form">
                     <div class="title-form__display-flex">
                         <input type="text" id="title" placeholder="제목을 입력해주세요">
                     </div>
                 </div>
+            </div>
             <div class="edit__main">
-                <div id="main-form">
+                <div class="main-form">
                     <div class="main-form__display-flex">
                         <label for="main"></label>
                         <textarea id="main" name="main" placeholder="내용을 입력해주세요"></textarea>
                     </div>
                 </div>
             </div>
-            <div class="edit__write">
-                <div id="write-form">
+                <div class="write-form">
                     <div class="write-form__display-flex">
                         <div id="btn_group">
                             <button id="cancel">취소</button> 
@@ -63,8 +65,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
         </section>
         </form>
         

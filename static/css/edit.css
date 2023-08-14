@@ -21,13 +21,21 @@
     font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;
 }
 
-#lecture__id{
+.lectureA{
+    font-size: 20px;
+}
+
+#lectureId{
     width: 300px;
     height: 20px;
     margin: 18px, 63px, 17px;
     padding: 0px, 0px, 26px;
     font-size: 14px;
     font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;
+}
+
+.lectureIDA{
+    font-size: 14px;
 }
 
 #title{
@@ -39,13 +47,13 @@
     font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;
     
 }
-.edit__start{
+.edit__start, .write-form{
     width: var(--mypage-width);
     margin: 130px auto 20px auto;
 
 }
 
-#title-form {
+.title-form {
     border-bottom: 1px solid var(--gray-line);
 }
 
@@ -86,7 +94,7 @@
     vertical-align: top;
 }
 
-#main-form {
+.main-form {
     border-bottom: 1px solid var(--gray-line);
 }
 
@@ -96,7 +104,7 @@
     text-align: center;
     position: relative;
     left: 300px;
-    margin: 0px 10px 130px;
+    margin: 10px 10px 60px;
 }
 
 #cancel{
@@ -123,4 +131,12 @@
 #btn_group #delete{
     position: relative;
     left: 505px;
+}
+
+#title:focus {
+    outline: none;
+}
+
+#main:focus {
+    outline: none;
 }
