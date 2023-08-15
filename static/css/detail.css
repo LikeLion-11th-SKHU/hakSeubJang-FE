@@ -188,3 +188,74 @@
     align-items: center;
 }
 
+.anchor_review {
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#sec_review {
+    display: none;
+}
+
+.conatiner_review_list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.inner_review {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-line);
+    background: #FFF;
+    box-shadow: 0px 10px 30px 0px rgba(138, 149, 158, 0.20);
+}
+
+.fs20fw500 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fs12fw500 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.writer_information {
+    display: flex;
+    gap: 18px;
+}
+
+.wrap_writer_profile {
+    display: flex;
+    gap: 8px;
+}
+
+.writer_profile {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--gray-line);
+    border-radius: 99%;
+    overflow: hidden;
+}
+
+.writer_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.grayfs12fw500{
+    color: var(--gray-box);
+    font-size: 12px;
+    font-weight: 500; 
+}
