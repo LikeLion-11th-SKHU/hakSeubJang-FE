@@ -1,5 +1,5 @@
 .section_summerize {
-    width: var(--mypage-width);
+    max-width: var(--mypage-width);
     margin: 0 auto;
 }
 .container_summerize {
@@ -9,7 +9,6 @@
     align-items: center;
     gap: 5px;
     margin: 40px 0;
-    width: 100%;
     height: 200px;
     border-radius: 16px;
     border: 1px solid #D9D9D9;
@@ -168,7 +167,7 @@
 }
 
 .lbl_timeValue span {
-    font-size: 16 px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -290,11 +289,13 @@
 .writer_information {
     display: flex;
     gap: 18px;
+    align-items: center;
 }
 
 .wrap_writer_profile {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .writer_profile {
@@ -318,4 +319,83 @@
     color: var(--gray-box);
     font-size: 12px;
     font-weight: 500; 
+}
+
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all  and (max-width:1023px) {
+} 
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+    .mqheadline {
+        display: none;
+    }
+    .btn_summerize {
+        width: 80px;
+        height: 40px;
+    }
+    .section_summerize, .section_introduce, .section_review {
+        margin: 0 20px;
+    }
+    .container_timetable {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrap_headline_review {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+@media all and (max-width: 425px){
+    .box-timetable {
+        width: 300px;
+        padding: 20px;
+        height: auto;
+        gap: 10px;
+    }
+    .lbl_timeValue span {
+        font-size: 12px;
+    }
+    .art_headline {
+        font-size: 18px;
+    }
+    .premier {
+        font-size: 10px;
+    }
+    .wrap_remark {
+        padding: 20px;
+        font-size: 12px;
+    }
+    .fs24fw600 {
+        font-size: 20px;
+    }
+    .container_summerize h1 {
+        font-size: 28px;
+    }
+    .container_toggle {
+        height: 40px;
+    }
+    .btn_summerize, .whiteBg {
+        width: 60px;
+        height: 40px;
+    }
+    .container_summerize span {
+        font-size: 12px;
+    }
+    .container_summerize {
+        gap: 10px;
+    }
+
+    .review_title_tg, .review_title {
+        font-size: 16px;
+    }
+
+    .review_content, .review_content_tg {
+        font-size: 12px;
+    }
+    .fs16fw400 {
+        font-size: 12px;
+    }
 }
