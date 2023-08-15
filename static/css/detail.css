@@ -199,6 +199,10 @@
     display: none;
 }
 
+.wrap_review {
+    cursor: pointer;
+}
+
 .conatiner_review_list {
     display: flex;
     flex-direction: column;
@@ -215,16 +219,72 @@
     border: 1px solid var(--gray-line);
     background: #FFF;
     box-shadow: 0px 10px 30px 0px rgba(138, 149, 158, 0.20);
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
 }
 
-.fs20fw500 {
+.inner_review:active {
+    background: rgba(138, 149, 158, 0.20);
+}
+
+.review_title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 1.2em;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
     font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
 }
 
-.fs12fw500 {
-    font-size: 12px;
+.review_title_tg {
+    /* display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; */
+    /* height: 1.2em; */
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
+}
+
+.review_content {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 2.4em;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.review_content_tg {
+    /* display: -webkit-box; */
+    /* -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
+    /* height: 2.4em; */
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    /* text-overflow: ellipsis; */
+    word-wrap: break-word;
+    /* overflow: hidden; */
+    line-height: 1.2;
+    /* white-space: nowrap; */
 }
 
 .writer_information {
