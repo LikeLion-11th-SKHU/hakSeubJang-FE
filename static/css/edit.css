@@ -140,3 +140,49 @@
 #main:focus {
     outline: none;
 }
+
+/* 미디어 쿼리 */
+
+@media all and (min-width:1024px) {
+    
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) {
+    .lectureA {
+        font-size: 15px;
+    }
+    .lectureIDA {
+        font-size: 11px;
+    }
+    .title-form__display-flex {
+        font-size: 24px;
+        width: 100%;
+    }
+    .main-form__display-flex {
+        font-size: 12px;
+    }
+    #btn_group {
+        font-size: 13px; /* 크기 처리가 전반적으로 이상해서 내일 질문,,.,. nav마저 안따라옴,.. */
+    }
+}
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width: 488px) and (max-width:767px) {
+    .lectureA {
+        font-size: 8px;
+    }
+    .lectureIDA {
+        font-size: 4px;
+    }
+    .title-form__display-flex {
+        font-size: 14px;
+        width: 100%;
+    }
+    .main-form__display-flex {
+        font-size: 8px;
+    }
+    #btn_group {
+        font-size: 9px; 
+    }   /* edit을 고쳐야 할꺼 같은데 ㅁㄴㅇ라ㅣㅓ홈니ㅏ엏 잘 안고쳐집니다 도와주세요... */
+}
