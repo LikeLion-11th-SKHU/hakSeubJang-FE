@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon 적용 모든 html에 적용되어야 함.-->
+    <link rel="icon" href="../../static/img/icon_regular.png">
+
+    <!-- reset.css, common 모든 html에 적용되어야 함. -->
+    <link rel="stylesheet" href="../../static/css/reset.css"> 
+    <link rel="stylesheet" href="../../static/css/common.css"> 
+
+    <link rel="stylesheet" href="../../static/css/detail.css"> 
+
+    
+    <title>평생학습의 장터, 학습장</title>
+</head>
+<body>
+<div id="root">
+    <!-- nav -->
+    <div class="nav_container">
+        <nav class="nav">
+            <a class="nav_logo" href="/">
+                <img class="logo" src="../../static/img/icon_word.png">
+            </a>
+            <div class="navbar_Loginwrapper">
+                <a href="/templates/lecture/list.html" class="nav_list">전체 강의</a>
+                <a href="/templates/login.html" class="nav_list">로그인</a>
+            </div>
+        </nav>
+    </div> <!-- nav_container -->
+
+    <!-- 여기서부터 코드 짜면됨. 단, content class이름 자체는 절대 건들지 말 것. -->
+    <div class="content">
+       <section class="section_summerize">
+            <div class="container_summerize">
+                <h2 class="fs24fw600">경상북도 의성군청</h2>
+                <h1>통기타기초</h1>
+                <span>태미숙 강사님</span>
+                <div class="btnWrap_summerize">
+                    <button class="btn_summerize" type="button" location.href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.25 21.7501H3.75V12.7501H2.42625C1.57275 12.7501 1.1745 11.6858 1.81725 11.1241L10.5982 2.80881C11.3842 2.06406 12.615 2.06406 13.401 2.80881L22.1812 11.1241C22.8247 11.6851 22.4265 12.7501 21.5722 12.7501H20.25V21.7501Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 21.75H9V17.25C9 15.5932 10.3432 14.25 12 14.25C13.6568 14.25 15 15.5932 15 17.25V21.75Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        <h3 class="hs16fw500 mqheadline">홈페이지 바로가기</h3>
+                    </button> 
+                    <button class="btn_summerize" type="button" location.href='tel:전화번호'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16.8111 21.8456C16.0778 21.8402 15.3477 21.7481 14.6361 21.5714C12.1784 20.9784 9.64763 19.4742 7.51107 17.3358C5.37451 15.1974 3.86841 12.6661 3.27545 10.2108C2.65107 7.62798 3.09638 5.41829 4.52795 3.98673L4.9367 3.57798C5.30755 3.20787 5.81009 3 6.33404 3C6.85798 3 7.36053 3.20787 7.73138 3.57798L10.0803 5.92642C10.4506 6.29715 10.6587 6.79974 10.6587 7.32376C10.6587 7.84778 10.4506 8.35037 10.0803 8.7211L8.69279 10.1081C9.35795 11.2753 10.2626 12.4434 11.3319 13.5127C12.4011 14.5819 13.5701 15.487 14.7369 16.1522L16.1239 14.7647C16.3074 14.5812 16.5252 14.4356 16.765 14.3362C17.0047 14.2369 17.2617 14.1857 17.5212 14.1857C17.7808 14.1857 18.0377 14.2369 18.2775 14.3362C18.5173 14.4356 18.7351 14.5812 18.9186 14.7647L21.267 17.1131C21.6374 17.4837 21.8455 17.9863 21.8455 18.5102C21.8455 19.0342 21.6374 19.5368 21.267 19.9074L20.8578 20.3161C19.8486 21.3272 18.4517 21.8456 16.8111 21.8456ZM6.33404 4.40532C6.2592 4.40495 6.18503 4.41952 6.11589 4.44817C6.04675 4.47683 5.98402 4.51899 5.93138 4.5722L5.52216 4.98095C4.45013 6.05298 4.13701 7.79345 4.64045 9.87892C5.17341 12.0881 6.54545 14.3836 8.50341 16.3411C10.4614 18.2986 12.7564 19.6692 14.9661 20.2041C17.052 20.7075 18.7915 20.3944 19.8636 19.3224L20.2723 18.9136C20.3791 18.8067 20.4391 18.6618 20.4391 18.5107C20.4391 18.3596 20.3791 18.2147 20.2723 18.1078L17.9244 15.7594C17.8175 15.6526 17.6726 15.5926 17.5215 15.5926C17.3704 15.5926 17.2255 15.6526 17.1186 15.7594L15.3603 17.5177C15.2548 17.6232 15.1184 17.6925 14.971 17.7154C14.8235 17.7383 14.6725 17.7137 14.54 17.6452C13.0986 16.8999 11.6454 15.8147 10.3376 14.5069C9.02982 13.1991 7.94701 11.7469 7.19982 10.3055C7.1312 10.173 7.10653 10.022 7.12937 9.87458C7.1522 9.7271 7.22137 9.59072 7.32685 9.48517L9.0856 7.72688C9.1924 7.62 9.25239 7.47509 9.25239 7.32399C9.25239 7.1729 9.1924 7.02799 9.0856 6.9211L6.73716 4.5722C6.68436 4.51908 6.62153 4.47698 6.55233 4.44834C6.48313 4.41969 6.40893 4.40507 6.33404 4.40532Z" fill="white"/>
+                            <path d="M17.562 13.3927C17.3755 13.3927 17.1967 13.3186 17.0648 13.1867C16.933 13.0549 16.8589 12.876 16.8589 12.6896C16.8575 11.4561 16.3669 10.2735 15.4948 9.40119C14.6226 8.52893 13.44 8.03823 12.2065 8.03674C12.0201 8.03674 11.8412 7.96266 11.7094 7.8308C11.5775 7.69894 11.5034 7.5201 11.5034 7.33362C11.5034 7.14714 11.5775 6.9683 11.7094 6.83643C11.8412 6.70457 12.0201 6.63049 12.2065 6.63049C15.5473 6.63049 18.2651 9.34924 18.2651 12.6896C18.2651 12.876 18.1911 13.0549 18.0592 13.1867C17.9273 13.3186 17.7485 13.3927 17.562 13.3927Z" fill="white"/>
+                            <path d="M20.5339 13.3926C20.3474 13.3926 20.1686 13.3186 20.0367 13.1867C19.9048 13.0548 19.8308 12.876 19.8308 12.6895C19.8308 8.48529 16.4089 5.06482 12.2065 5.06482C12.0201 5.06482 11.8412 4.99074 11.7094 4.85888C11.5775 4.72702 11.5034 4.54817 11.5034 4.36169C11.5034 4.17521 11.5775 3.99637 11.7094 3.86451C11.8412 3.73265 12.0201 3.65857 12.2065 3.65857C17.1861 3.65857 21.237 7.70998 21.237 12.6895C21.237 12.876 21.1629 13.0548 21.0311 13.1867C20.8992 13.3186 20.7204 13.3926 20.5339 13.3926Z" fill="white"/>
+                            </svg>
+                        <h3 class="hs16fw500 mqheadline">054-830-6294</h3>
+                    </button>
+                    <button class="whiteBg" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16"> <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/> </svg>
+                        <h3 class="hs16fw500">찜</h3>
+                    </button>
+                </div>
+            </div>
+       </section> <!-- section_summerize-->
+
+       <div class="container_toggle">
+            <div class="wrap_toggle_item">
+                <input type="radio" name="button" value="강좌소개" id="introduce" checked>
+                <label for="introduce">강좌 소개</label>
+            </div>
+            <div class="wrap_toggle_item">
+                <input type="radio" name="button" value="후기모음" id="review">
+                <label for="review">후기 모음</label>
+            </div>
+       </div> <!-- container_toggle-->
+
+       <section class="section_introduce" id="sec_introduce">
+            <article class="article_wrap">
+                <h1 class="art_headline">✏️ 소개 </h1>
+                <p class="fs16fw400">통기타기초 강좌</p>
+            </article> <!-- 소개 -->
+
+            <article class="article_wrap">
+                <div class="wrap_headline">
+                    <h1 class="art_headline">⏰ 일정 안내 및 상세 내용 </h1>
+                    <span class="premier">변동 가능성이 있으니 자세한 사항은 홈페이지를 참고해주세요. </span>
+                </div>
+                <div class="container_timetable">
+                    <div class="box-timetable">
+                        <div class="column-time">
+                            <div class="lbl_time">
+                                <span>접수기간</span>
+                            </div>
+                            <div class="lbl_timeValue">
+                                <span>2023-02-02 ~ 2023-02-21</span>
+                            </div>
+                        </div>
+
+                        <div class="column-time">
+                            <div class="lbl_time">
+                                <span>교육기간</span>
+                            </div>
+                            <div class="lbl_timeValue">
+                                <span>2023-03-09 ~ 2023-06-22</span>
+                            </div>
+                        </div>
+
+                        <div class="column-time">
+                            <div class="lbl_time">
+                                <span>요일/시간</span>
+                            </div>
+                            <div class="lbl_timeValue">
+                                <span>목 / 18:30 ~ 20:30</span>
+                            </div>
+                        </div>
+
+                        <div class="column-time">
+                            <div class="lbl_time">
+                                <span>모집정원</span>
+                            </div>
+                            <div class="lbl_timeValue">
+                                <span>10명</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-timetable">
+                        <div class="column-time">
+                            <div class="lbl_time">
+                                <span>온/오프</span>
+                            </div>
+                            <div class="lbl_timeValue">
+                                <span>오프라인</span>
+                            </div>
+                        </div>
+
+                        <div class="column-time">
+                            <div class="lbl_time">
+                                <span>교육대상</span>
+                            </div>
+                            <div class="lbl_timeValue">
+                                <span>지역주민</span>
+                            </div>
+                        </div>
+
+                        <div class="column-time">
+                            <div class="lbl_time">
+                                <span>수강료</span>
+                            </div>
+                            <div class="lbl_timeValue">
+                                <span>무료</span>
+                            </div>
+                        </div>
+
+                        <div class="column-time">
+                            <div class="lbl_time">
+                                <span>접수방법</span>
+                            </div>
+                            <div class="lbl_timeValue">
+                                <span>방문 + 인터넷접수 / 추첨</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article> <!-- 일정 안내 및 상세 내용-->
+
+            <article class="article_wrap">
+                <h1 class="art_headline"> ✅ 비고 </h1>
+                <div class="wrap_remark">
+                    <span>💡 이 강좌는 학점은행제평가가 인정되는 강좌입니다.  </span>
+                    <span>💡 이 강좌는 직업능력개발훈련비를 지원하는 강좌입니다.  </span>
+                    <span>💡 이 강좌는 평생학습계좌제평가가 인정되는 강좌입니다.</span>
+                </div>
+            </article> <!-- 비고 -->
+
+            <article class="article_wrap"> 
+                <h1 class="art_headline"> 🗺️ 지도 </h1>
+                <!-- 지도 api 들어갈 곳 -->
+            </article>
+       </section> <!-- section_introduce -->
+
+
+       <section class="section_review" id="sec_review">
+            <article class="article_wrap">
+                <div class="wrap_headline_review">
+                    <h1 class="art_headline">👤 잠깐! 이미 이 강좌를 수강하셨다면?</h1>
+                    <a class="anchor_review" href="/templates/review/edit.html">후기 글 작성하기</a>
+                </div>
+                <div class="container_review_list">
+
+                    <!-- wrap_review 반복 -->
+                    <div class="wrap_review" id="click_review">
+                        <div class="inner_review">
+                            <h2 class="review_title" id="p_title">기타 배우고 싶어서 무작정 신청했는데...일단 첫번째로 강사님이 너무좋으셨던게 제일 큰 장점이아니였나싶은데나는.</h2>
+                            <p class="review_content" id="p_content">이 강좌의 가장 큰 장점을 꼽자면 강사님이 너무 친절하게 가르쳐주셔서 좋았습니다. 특히 제가 좋아하는 곡을 가져오면 봐주시기도 했고...
+                                기본기만 배우고 모르는 노래만 마냥 공부하는 그런 수업이랑은 다르게 흥미도 느끼고 실력도 가져가는 좋은 강좌입니다. 시간되시면 꼭 !! 들어보시는 것을 
+                                강추 드립니다!!! 감사합니다.</p>
+                            <div class="writer_information">
+                                <div class="wrap_writer_profile">
+                                    <div class="writer_profile">
+                                        <img class="writer_img" src="/static/img/background1.jpg" alt="프로필사진">
+                                    </div>
+                                    <span class="grayfs12fw500">익명</span>
+                                </div>
+                                <div class="wrap_writer_date">
+                                    <span class="grayfs12fw500">2023.07.02</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- wrap_review -->
+                    
+                </div> <!-- container_review_list-->
+            </article>
+       </section> <!-- section_review -->
+    </div>
+
+    <!-- footer -->
+    <div class="footer_container">
+        <footer class="footer">
+            <div class="copyright">
+                <h2>학습장</h2>
+                <div class="copyright_content">
+                    <span>Contact</span>
+                    <span>lemonherb0323@naver.com</span>
+                </div>
+                <div class="copyright_content">
+                    <span>Copyright</span>
+                    <span>HakSeubJang. All rights reserved</span>
+                </div>
+            </div>
+            <div class="hakseubjang">
+                <a class="ft14-fw600" href="#">이용약관</a>
+                <a class="ft14-fw600" href="#">개인정보처리방침</a>
+                <a class="ft14-fw600" href="#">서비스소개</a>
+            </div>
+
+        </footer>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="/static/js/hidden.js"></script>
+<script src="/static/js/review.js"></script>
+</body>
+</html>
